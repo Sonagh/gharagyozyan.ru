@@ -1,1 +1,1 @@
-﻿# Gharagyozyan.ru painter website
+﻿# gharagyozyan.ru painter website
