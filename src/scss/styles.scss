@@ -21,6 +21,9 @@ $fontSizesMax: 40 !default;
 }
 
 // imports
+//plugins
+//@import "fullpage/fullpage";
+
 @import 'custom';
 @import 'bootstrap';
 
@@ -58,4 +61,11 @@ video {
 
 .mw-none {
   max-width: none;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+.h-50vh {
+  height: 50vh;
 }

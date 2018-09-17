@@ -1,2 +1,12 @@
 // custom variables
 $body-bg: #e4e4e4;
+
+.jumbotron {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.3)), url("https://via.placeholder.com/350x150") no-repeat center center / cover;
+}
+
+  figcaption {
+    @include position($type:absolute, $top:0, $left:0, $right:0, $bottom:0);
+  }
+

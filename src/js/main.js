@@ -1,4 +1,10 @@
 $(function() {
-	let message = 'Hello from JS!';
-	console.log(message);
+    // $('#fullpage').fullpage({
+    //     //options here
+    //     autoScrolling:true,
+    //     scrollHorizontally: true
+    // });
+    //
+    // //methods
+    // $.fn.fullpage.setAllowScrolling(false);
 });
