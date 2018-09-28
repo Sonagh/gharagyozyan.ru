@@ -20,12 +20,15 @@ $fontSizesMax: 40 !default;
   @if $zindex { z-index: $zindex; }
 }
 
-// imports
-//plugins
+/* imports */
+// plugins
 //@import "fullpage/fullpage";
 
-@import 'custom';
+@import "bootstrap-overrides";
 @import 'bootstrap';
+
+@import 'custom';
+@import "utilities";
 
 // generarting font sizes based on grid breakpoints
 @each $breakpoint in map-keys($grid-breakpoints) {
