@@ -1,0 +1,39 @@
+#footer {
+  ul {
+    li {
+      @extend .mr-3;
+      a {
+        color: $white;
+        &:hover {
+          color: darken($white, 20%);
+        }
+      }
+    }
+    & + ul {
+      li:not(:last-child) a {
+        border-right: 1px solid $gray-500;
+      }
+      li a {
+        @extend .pr-3;
+        color: $gray-500;
+        &:hover {
+          color: lighten($white, 15%);
+        }
+      }
+    }
+  }
+}
+.social-links {
+  .icon-container {
+    width: rem-calc(35px);
+    height: rem-calc(35px);
+    position: relative;
+    @extend .mr-3;
+    color: $gray-900;
+    background-color: theme-color('primary');
+    i {
+      @include position($type: absolute, $top: 50%, $left: 50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}

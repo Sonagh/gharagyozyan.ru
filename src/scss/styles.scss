@@ -27,8 +27,12 @@ $fontSizesMax: 40 !default;
 @import "bootstrap-overrides";
 @import 'bootstrap';
 
-@import 'custom';
 @import "utilities";
+@import 'custom';
+@import "common";
+
+@import "layout/navbar";
+@import "layout/footer";
 
 // generarting font sizes based on grid breakpoints
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -47,28 +51,4 @@ $fontSizesMax: 40 !default;
       }
     }
   }
-}
-
-// additional helpers
-img {
-  object-fit: cover;
-}
-
-img,
-svg,
-video {
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-}
-
-.mw-none {
-  max-width: none;
-}
-
-.h-100vh {
-  height: 100vh;
-}
-.h-50vh {
-  height: 50vh;
 }

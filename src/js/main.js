@@ -7,4 +7,8 @@ $(function() {
     //
     // //methods
     // $.fn.fullpage.setAllowScrolling(false);
+    $('.btn-toggle').click(function () {
+        $(this).toggleClass('toggled');
+        $('.navbar-dark').toggleClass('toggled');
+    })
 });

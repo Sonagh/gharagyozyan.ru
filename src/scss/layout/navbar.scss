@@ -1,0 +1,15 @@
+#navbar {
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  @include position($type: fixed, $left: -200px);
+  transition: width .4s ease-in;
+  li > a {
+    font-size: rem-calc(36px);
+    color: $white;
+  }
+  &.toggled {
+    width: 100%;
+    left: 0;
+  }
+}

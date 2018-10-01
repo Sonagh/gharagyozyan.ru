@@ -1,0 +1,79 @@
+.hover-effect {
+  overflow: hidden;
+  img {
+    transition: all .4s ease-in;;
+  }
+  .overlay {
+    @include position(absolute, 0, 0, 0, 0);
+    background-color: rgba($black, .3);
+    transition: background-color .4s ease-in;;
+  }
+  .btn {
+    opacity: 0;
+    transition: opacity .4s ease-in;;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+    .btn {
+      opacity: 1;
+    }
+    .overlay {
+      background-color: rgba(theme-color('primary'), .5);
+    }
+  }
+}
+
+.btn {
+  &.btn-outline-secondary {
+    color: $white;
+    border: 1px solid $white;
+    &:hover {
+      color: theme-color('primary');
+      background-color: $white;
+    }
+  }
+  &.btn-toggle {
+    width: 55px;
+    height: 40px;
+    @include position($type: fixed, $top: 8px, $left: 2px);
+    span {
+      height: 3px;
+      display: block;
+      background-color: $white;
+      transition: all .4s ease-in;
+      & + span {
+        margin-top: 5px;
+      }
+      &:first-child {
+        width: 90%;
+      }
+      &:nth-child(2) {
+        width: 80%;
+      }
+      &:last-child {
+        width: 100%;
+      }
+    }
+    &.toggled {
+      span {
+        position: absolute;
+        &:first-child {
+          width: 60%;
+          top: 15px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          width: 60%;
+          left: 11px;
+          top: 10px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
