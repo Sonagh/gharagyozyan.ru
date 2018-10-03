@@ -1,6 +1,15 @@
 .jumbotron {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.3)), url("https://via.placeholder.com/350x150") no-repeat center center / cover;
+  /* 992px and bigger */
+  @include media-breakpoint-up(lg) {
+    h1 {
+      font-size: rem-calc(55px);
+    }
+    p.font-italic {
+      font-size: rem-calc(25px);
+    }
+  }
 }
 
   figcaption {
