@@ -14,11 +14,14 @@ video {
   max-width: none;
 }
 
-.h-100vh {
-  height: 100vh;
-}
-.h-50vh {
-  height: 50vh;
+/* 992px and smaller  */
+@include media-breakpoint-up(lg) {
+  .h-md-100vh {
+    height: 100vh;
+  }
+  .h-md-50vh {
+    height: 50vh;
+  }
 }
 
 .cursor-pointer {

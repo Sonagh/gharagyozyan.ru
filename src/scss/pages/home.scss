@@ -1,0 +1,17 @@
+/* 992px and smaller */
+@include media-breakpoint-down(md) {
+  .section-menu figure {
+    max-height: 275px;
+  }
+}
+
+.header {
+  /* 992px and smaller */
+  @include media-breakpoint-down(md) {
+    height: rem-calc(450px) !important;
+  }
+  /* 576px and smaller */
+  @include media-breakpoint-down(xs) {
+    height: rem-calc(250px) !important;
+  }
+}

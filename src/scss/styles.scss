@@ -34,6 +34,10 @@ $fontSizesMax: 40 !default;
 @import "layout/navbar";
 @import "layout/footer";
 
+@import "pages/home";
+
+@import "components/image-item";
+
 // generarting font sizes based on grid breakpoints
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
@@ -45,10 +49,25 @@ $fontSizesMax: 40 !default;
       }
 
       @if $size < 26 {
-        $size: $size + 1;
       } @else {
         $size: $size + 2;
       }
     }
+  }
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+/* 576px and smaller */
+@include media-breakpoint-down(xs) {
+  h1, .h1 {
+    font-size: rem-calc(28px);
   }
 }

@@ -1,9 +1,19 @@
 $(function() {
-    /* fullpage scroll plugin */
-    $('#fullpage').fullpage({
-        autoScrolling: true,
-        anchors:['home','about','portfolio','contact']
+    /* webfont loader */
+    WebFont.load({
+        google: {
+            families: ['Roboto Condensed:300,400,700']
+        }
     });
+
+    /* fullpage scroll plugin */
+    if ($(window).width() >= 992) {
+        $('#fullpage').fullpage({
+            responsiveWidth: 992,
+            anchors:['home','about','portfolio','contact']
+        });
+    }
+
 
 
     /* navbar toggle button */
@@ -20,4 +30,4 @@ $(function() {
         navbar.removeClass('toggled');
 
     });
-})
+});

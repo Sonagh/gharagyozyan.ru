@@ -15,7 +15,7 @@
   </head>
   <body>
   <!-- nav -->
-  <buttton class="btn btn-toggle cursor-pointer">
+  <buttton class="btn btn-toggle cursor-pointer p-2">
     <span></span>
     <span></span>
     <span></span>
@@ -40,136 +40,139 @@
     </ul>
   </nav>
 
-  <main id="fullpage">
-    <!-- header -->
-    <header class="section jumbotron text-white rounded-0 mb-0">
-      <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-        <h1>Hayk Gharagyozyan</h1> <br>
-        <p class="font-italic">Painter, Member of the Artists' Union</p>
-      </div>
-    </header>
-    <!-- about -->
-    <section class="section h-100vh">
-      <div class="row h-100 mx-0">
-        <div class="col-md-6 px-0">
-          <!--<img src="assets/img/about.jpg" alt="About me" class="img-fluid w-100 h-100">-->
-          <img src="https://via.placeholder.com/350x150" alt="About Me" class="img-fluid w-100 h-100">
-        </div>
-        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-          <h2 class="mb-5">About Me</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- menu-->
-    <nav class="section section-menu h-100vh">
-      <div class="row no-gutters h-100 mx-0">
-        <div class="col-md-6">
-          <div class="row no-gutters">
-            <a href="#" class="col-6 h-50vh">
-              <figure class="position-relative hover-effect h-100 m-0">
-                <img src="assets/img/landscape.jpg" alt="Landscape" class="img-fluid w-100 h-100">
-                <figcaption class="overlay d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="text-uppercase text-white mb-3">Landscape</h3>
-                  <button type="button" class="btn btn-outline-secondary px-4">View More</button>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="#" class="col-6 h-50vh">
-              <figure class="position-relative hover-effect h-100 m-0">
-                <img src="assets/img/portrait.jpg" alt="Portrait" class="img-fluid w-100 h-100">
-                <figcaption class="overlay d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="text-uppercase text-white mb-3">Portrait</h3>
-                  <button type="button" class="btn btn-outline-secondary">View More</button>
-                </figcaption>
-              </figure>
-            </a>
-            <a href="#" class="col-12 h-50vh">
-              <figure class="position-relative hover-effect h-100 m-0">
-                <img src="assets/img/still-life.jpg" alt="Still life" class="img-fluid w-100 h-100">
-                <figcaption class="overlay d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="text-uppercase text-white mb-3">Still life</h3>
-                  <button type="button" class="btn btn-outline-secondary">View More</button>
-                </figcaption>
-              </figure>
-            </a>
+  <main class="container-fluid">
+    <div class="card-columns my-3">
+      <figure class="image-item">
+        <img src="assets/img/portrait/1.jpg" alt="Portrait of Armen" class="w-100">
+        <figcaption class="text-white d-flex justify-content-between align-items-center px-4">
+          <div>
+            <h3 class="font-size-21">
+              <i class="fas fa-tag text-dark mr-2"></i> Portrait of Armen
+            </h3>
+            <p class="lead mb-2">
+              <i class="fas fa-ruler-combined text-dark mr-2"></i> 73x66
+            </p>
+            <p class="lead mb-0">
+              <i class="far fa-calendar-alt text-dark mr-2"></i> 2015
+            </p>
           </div>
-        </div>
-        <a href="#" class="col-md-6">
-          <figure class="position-relative hover-effect h-100 m-0">
-            <img src="assets/img/all-photos.jpg" alt="All photos" class="img-fluid w-100 h-100">
-            <figcaption class="overlay d-flex flex-column justify-content-center align-items-center">
-              <h3 class="text-uppercase text-white mb-3">All photos</h3>
-              <button type="button" class="btn btn-outline-secondary">View More</button>
-            </figcaption>
-          </figure>
-        </a>
-      </div>
-    </nav>
-    <div class="section">
-      <!-- contact -->
-      <section class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-5">Contact with me</h2>
-          <form class="row">
-            <div class="col-md-8 mx-auto text-center">
-              <div class="row">
-                <div class="form-group col-6">
-                  <label class="sr-only" for="your-name">Your Name</label>
-                  <input type="password" class="form-control" id="your-name" placeholder="Your Name">
-                </div>
-                <div class="form-group col-6">
-                  <label class="sr-only" for="your-email">Your Email</label>
-                  <input type="email" class="form-control" id="your-email" aria-describedby="your-email" placeholder="Enter Email">
-                </div>
-                <div class="col form-group">
-                  <label class="sr-only" for="your-message">Your Message Here</label>
-                  <textarea class="form-control" id="your-message" rows="6" placeholder="Your Message Here"></textarea>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary px-5 py-2"><span class="px-4">Send</span></button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <!-- footer -->
-      <footer id="footer" class="bg-dark text-center pt-5">
-        <div class="container pb-4">
-          <div class="social-links d-flex justify-content-center mb-3">
-            <a href="#" class="icon-container rounded-circle p-0">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="icon-container rounded-circle p-0">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="tel:+37499237385" class="icon-container rounded-circle p-0">
-              <i class="fas fa-phone"></i>
-            </a>
+          <div class="mt-5">
+            <a href="#" class="btn btn-dark px-4">View image</a>
           </div>
-          <ul class="list-unstyled d-flex justify-content-center text-uppercase mb-3">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/news">News</a></li>
-          </ul>
-          <ul class="list-unstyled d-flex justify-content-center mb-3">
-            <li><a href="/landscape">Landscape</a></li>
-            <li><a href="/still-life">Still Life</a></li>
-            <li><a href="/portrait">Portrait</a></li>
-          </ul>
-        </div>
-        <div class="bg-primary text-white py-2">
-          <div class="container">
-            <p class="mb-1">Hayk Gharagyozyan | Member of the Artists' Union</p>
-            <p class="small mb-0">&copy; 2018 Design and Developing by <a href="#" class="text-dark"> Sona Gharagyozyan</a> | All right reserved</p>
+        </figcaption>
+      </figure>
+      <figure class="image-item">
+        <img src="assets/img/portrait/2.jpg" alt="Portrait of Sona" class="w-100">
+        <figcaption class="text-white d-flex justify-content-between align-items-center px-4">
+          <div>
+            <h3 class="font-size-21">
+              <i class="fas fa-tag text-dark mr-2"></i> Portrait of Sona
+            </h3>
+            <p class="lead mb-2">
+              <i class="fas fa-ruler-combined text-dark mr-2"></i> 74x66
+            </p>
+            <p class="lead mb-0">
+              <i class="far fa-calendar-alt text-dark mr-2"></i> 2014
+            </p>
           </div>
-        </div>
-      </footer>
+          <div class="mt-5">
+            <a href="#" class="btn btn-dark px-4">View image</a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="image-item">
+        <img src="assets/img/portrait/3.jpg" alt="Portrait of Girl" class="w-100">
+        <figcaption class="text-white d-flex justify-content-between align-items-center px-4">
+          <div>
+            <h3 class="font-size-21">
+              <i class="fas fa-tag text-dark mr-2"></i> Self Portrait
+            </h3>
+            <p class="lead mb-2">
+              <i class="fas fa-ruler-combined text-dark mr-2"></i> 70x60
+            </p>
+            <p class="lead mb-0">
+              <i class="far fa-calendar-alt text-dark mr-2"></i> 2016
+            </p>
+          </div>
+          <div class="mt-5">
+            <a href="#" class="btn btn-dark px-4">View image</a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="image-item">
+        <img src="assets/img/portrait/4.jpg" alt="Portrait of Ashot" class="w-100">
+        <figcaption class="text-white d-flex justify-content-between align-items-center px-4">
+          <div>
+            <h3 class="font-size-21">
+              <i class="fas fa-tag text-dark mr-2"></i> Portrait of Girl
+            </h3>
+            <p class="lead mb-2">
+              <i class="fas fa-ruler-combined text-dark mr-2"></i> 50x45
+            </p>
+            <p class="lead mb-0">
+              <i class="far fa-calendar-alt text-dark mr-2"></i> 1987
+            </p>
+          </div>
+          <div class="mt-5">
+            <a href="#" class="btn btn-dark px-4">View image</a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="image-item">
+        <img src="assets/img/portrait/5.jpg" alt="Portrait of Ashot" class="w-100">
+        <figcaption class="text-white d-flex justify-content-between align-items-center px-4">
+          <div>
+            <h3 class="font-size-21">
+              <i class="fas fa-tag text-dark mr-2"></i> Portrait of Ashot
+            </h3>
+            <p class="lead mb-2">
+              <i class="fas fa-ruler-combined text-dark mr-2"></i> 75x65
+            </p>
+            <p class="lead mb-0">
+              <i class="far fa-calendar-alt text-dark mr-2"></i> 1985
+            </p>
+          </div>
+          <div class="mt-5">
+            <a href="#" class="btn btn-dark px-4">View image</a>
+          </div>
+        </figcaption>
+      </figure>
     </div>
   </main>
+  <!-- footer -->
+  <footer id="footer" class="bg-dark text-center pt-5">
+    <div class="container pb-4">
+      <div class="social-links d-flex justify-content-center mb-3">
+        <a href="#" class="icon-container rounded-circle p-0">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="icon-container rounded-circle p-0">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+37499237385" class="icon-container rounded-circle p-0">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center text-uppercase mb-3">
+        <li data-menuanchor="home"><a href="#home">Home</a></li>
+        <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        <li><a href="/news">News</a></li>
+      </ul>
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-3">
+        <li><a href="/landscape">Landscape</a></li>
+        <li><a href="/still-life">Still Life</a></li>
+        <li><a href="/all">All Photoes</a></li>
+      </ul>
+    </div>
+    <div class="bg-primary text-white py-2">
+      <div class="container">
+        <p class="mb-1">Hayk Gharagyozyan | Member of the Artists' Union</p>
+        <p class="small mb-0">&copy; 2018 Design and Developing by <a href="#" class="text-dark"> Sona Gharagyozyan</a> | All right reserved</p>
+      </div>
+    </div>
+  </footer>
 
 
 

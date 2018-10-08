@@ -1,0 +1,28 @@
+.image-item {
+  position: relative;
+  overflow: hidden;
+  img {
+    transition: transform 0.4s;
+  }
+  figcaption {
+    @include position($type: absolute, $top: auto, $right: 0, $bottom: 0, $left: 0);
+    height: 160px;
+    opacity: 0;
+    transform: translateY(100%);
+    background-color: theme-color('primary');
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+  }
+  .fa-tag {
+    font-size: .8em;
+  }
+  &:hover {
+    img {
+      transform: translateY(-30px);
+    }
+    figcaption {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: transform 0.4s, opacity 0.1s;
+    }
+  }
+}
