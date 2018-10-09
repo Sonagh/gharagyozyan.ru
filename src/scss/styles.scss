@@ -38,6 +38,8 @@ $fontSizesMax: 40 !default;
 
 @import "components/image-item";
 
+@import "fancybox/fancybox";
+
 // generarting font sizes based on grid breakpoints
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {

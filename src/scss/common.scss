@@ -77,3 +77,8 @@
     }
   }
 }
+
+// fancybox overrides
+.fancybox-thumbs__list a::before {
+  border-color: theme-color('primary') !important;
+}

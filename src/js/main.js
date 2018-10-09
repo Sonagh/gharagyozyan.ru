@@ -30,4 +30,6 @@ $(function() {
         navbar.removeClass('toggled');
 
     });
+
+    $('.image-item a').fancybox();
 });
