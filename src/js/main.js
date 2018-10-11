@@ -32,4 +32,6 @@ $(function() {
     });
 
     $('.image-item a').fancybox();
+
 });
+
